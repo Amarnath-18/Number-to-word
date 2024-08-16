@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Words Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Number to Words Converter</h1>
+            <div class="input-group">
+                <input type="number" id="numberInput" placeholder="Enter a number" />
+                <button onclick="convertNumber()">Convert</button>
+            </div>
+            <button class="export-btn" onclick="exportToPDF()">Export to PDF</button>
+            <button class="theme-btn" onclick="toggleTheme()">Toggle Theme</button>
+            <p id="result"></p>
+            <div class="examples">
+                <h2>Interactive Examples</h2>
+                <button onclick="setExample(123)">123</button>
+                <button onclick="setExample(1000)">1000</button>
+                <button onclick="setExample(123456)">123,456</button>
+            </div>
+            <div class="history">
+                <h2>Recent Conversions</h2>
+                <ul id="history"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</body>
+</html>
