@@ -53,6 +53,9 @@ button {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
+#btnx{
+    background-color: rgb(48, 162, 48);
+}
 
 button:hover {
     transform: scale(1.05);
